@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tur Belém - Praias</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style_pontos_turisticos.css">
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <!-- Logo -->
+                <img class="logo-img" src="tur imagens/logo 1.png"
+                    alt="Logo Tur Belém">
+                <div class="logo">Tur Belém</div>
+
+                <!-- Menu de navegação -->
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pontos_turisticos.html">Pontos
+                            Turísticos</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li class="active"><a href="praias.html">Praias</a></li>
+                    <li><a href="sobrenos.html">Sobre</a></li>
+                    <li class="search-container">
+                        <div id="search">
+                            <svg viewBox="0 0 420 60"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect class="bar" />
+                                <g class="magnifier">
+                                    <circle class="glass" />
+                                    <line class="handle" x1="32" y1="32" x2="44"
+                                        y2="44"></line>
+                                </g>
+                                <g class="sparks">
+                                    <circle class="spark" />
+                                    <circle class="spark" />
+                                    <circle class="spark" />
+                                </g>
+                                <g class="burst pattern-one">
+                                    <circle class="particle circle" />
+                                    <path class="particle triangle" />
+                                    <circle class="particle circle" />
+                                    <path class="particle plus" />
+                                    <rect class="particle rect" />
+                                    <path class="particle triangle" />
+                                </g>
+                                <g class="burst pattern-two">
+                                    <path class="particle plus" />
+                                    <circle class="particle circle" />
+                                    <path class="particle triangle" />
+                                    <rect class="particle rect" />
+                                    <circle class="particle circle" />
+                                    <path class="particle plus" />
+                                </g>
+                                <g class="burst pattern-three">
+                                    <circle class="particle circle" />
+                                    <rect class="particle rect" />
+                                    <path class="particle plus" />
+                                    <path class="particle triangle" />
+                                    <rect class="particle rect" />
+                                    <path class="particle plus" />
+                                </g>
+                            </svg>
+                            <input type="search" name="q" id="searchInput"
+                                aria-label="Search for inspiration"
+                                oninput="buscar()" />
+                        </div>
+                    </li>
+
+                </ul>
+
+                <!-- Ícone de menu hamburguer para mobile -->
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </header>
+
+        <div id="card-container-praia" class="card-container"></div>
+
+        <footer>
+                <div class="footer-container">
+                    <!-- Links de navegação do rodapé -->
+                    <div class="footer-nav">
+                        <h3>Explore</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="pontos_turisticos.html">Pontos
+                                    Turísticos</a></li>
+                            <li><a href="galeria.html">Galeria</a></li>
+                            <li><a href="praias.html">Praias</a></li>
+                            <li><a href="sobrenos.html">Sobre</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Informações de contato -->
+                    <div class="footer-contact">
+                        <h3>Contato</h3>
+                    <p>Email: turbelem10@gmail.com</p>
+                    <p>Telefone: (91) 4002-8922</p>
+                    <p>Endereço: Avenida Gov. José Malcher, 1527 - Nazaré - Belém, PA</p>
+                    </div>
+
+                    <!-- Redes sociais -->
+                    <div class="footer-social">
+                        <h3>Siga-nos</h3>
+                        <a href="https://www.facebook.com/profile.php?id=61570008834864&mibextid=ZbWKwL"><img src="tur imagens/facebook icon.png"
+                            alt="Facebook"></a>
+                        <a href="https://www.instagram.com/tur_belemweb?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="tur imagens/insta.png"
+                            alt="Instagram"></a>
+                        <a href="https://x.com/TurBelem_?t=ne6fS6BIL2rIgweU--7zpA&s=09"><img src="tur imagens/twitter icon.png"
+                            alt="Twitter"></a>
+                    </div>
+                </div>
+
+                <!-- Direitos autorais -->
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Tur Belém. Todos os direitos reservados.</p>
+                </div>
+            </footer>
+
+        <script src="script/main.js"></script>
+        <script src="script/criar_card.js"></script>
+        <script src="script/script.js"></script>
+    </body>
+</html>

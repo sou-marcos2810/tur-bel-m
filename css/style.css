@@ -1,0 +1,355 @@
+/* Reset de estilos para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+::selection {
+    background-color: #017143;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+    /* Evita rolagem horizontal */
+    background-color: #dfdfdf;
+}
+
+/* Centralização de conteúdo */
+.center {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 0 0 100px;
+    padding: 0 2%;
+}
+
+/* Cabeçalho */
+/* Navbar */
+header {
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.navbar .logo-img {
+    max-width: 50px;
+}
+
+.navbar .menu {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.navbar .menu li {
+    margin-right: 30px;
+    position: relative;
+}
+
+.navbar .menu li a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: #017143;
+    transform: translateY(-3px);
+    /* Efeito de elevação */
+}
+
+/* Animação para indicar o menu ativo */
+.navbar .menu li.active a {
+    color: #017143;
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    html,
+    body {
+        overflow: auto;
+    }
+
+    .navbar .menu {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        display: none;
+        /* Escondido por padrão */
+    }
+
+    .navbar .menu li {
+        margin: 20px 0;
+    }
+
+    .navbar.active .menu {
+        display: flex;
+        /* Exibe o menu quando a navbar está ativa */
+    }
+
+    .navbar .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        color: #fff;
+    }
+
+    .navbar .hamburger.open .bar {
+        background-color: #017143;
+        /* Muda a cor das barras quando aberto */
+    }
+
+    .navbar .hamburger .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
+        transition: all 0.3s ease;
+    }
+
+    .texto-sobre h1 {
+        font-size: 32px;
+    }
+
+    .texto-sobre p {
+        padding: 2px;
+        font-size: 15px;
+        max-width: 90%;
+    }
+
+    .texto-sobre button {
+        width: 120px;
+        height: 35px;
+    }
+
+    .center {
+        margin: 100px 0 0 0;
+    }
+}
+
+/* Seção Sobre */
+section.sobre {
+    height: calc(100% - 200px);
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px;
+    margin-top: 80px;
+    /* Garante que a seção sobre não fique sobre a navbar */
+}
+
+/* Forma circular */
+.extras {
+    position: absolute;
+    margin-top: 250px;
+    right: -690px;
+    width: 1200px;
+    height: 900px;
+    border-radius: 50%;
+    background-color: #027a48ea;
+    z-index: 0;
+}
+
+.imagem {
+    position: absolute;
+    left: 85px;
+    top: 2px;
+    z-index: -1;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+.texto-sobre {
+    text-align: left;
+    margin-top: 280px;
+    z-index: 1;
+}
+
+.texto-sobre h1 {
+    font-size: 35px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.texto-sobre p {
+    color: #fff;
+    background-color: #017143;
+    font-size: 19px;
+    font-weight: bold;
+    max-width: 800px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    border: 3px solid #017143;
+    border-radius: 10px;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.3);
+}
+
+.texto-sobre button {
+    border: 0;
+    background-color: black;
+    font-size: 15px;
+    color: white;
+    border-radius: 10px;
+    width: 120px;
+    height: 28px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.texto-sobre button:hover {
+    background-color: rgb(76, 132, 88);
+    color: #fff;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 450px;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Container principal do rodapé */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Título das seções do rodapé */
+.footer-container h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* Navegação do rodapé */
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav ul li {
+    margin: 5px 0;
+}
+
+.footer-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-nav ul li a:hover {
+    color: #017143;
+    text-decoration: underline;
+}
+
+/* Contato do rodapé */
+.footer-contact p {
+    margin: 5px 0;
+}
+
+/* Redes sociais do rodapé */
+.footer-social a {
+    display: inline-block;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social a:hover {
+    transform: scale(1.1);
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Linha inferior do rodapé */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-container>div {
+        margin-bottom: 20px;
+        /* Espaço entre as seções do rodapé */
+    }
+
+    .footer-social {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        margin-top: 1000px;
+    }
+
+    .footer-container h3 {
+        font-size: 1em;
+        /* Reduz o tamanho do título em telas muito pequenas */
+    }
+
+    .footer-nav ul li a {
+        font-size: 0.9em;
+        /* Reduz o tamanho dos links */
+    }
+
+    .footer-bottom {
+        font-size: 0.8em;
+    }
+}

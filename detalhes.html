@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Detalhes - Ponto Turístico</title>
+        <link rel="stylesheet" href="css/style_descricao.css">
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <!-- Logo -->
+                <img class="logo-img" src="tur imagens/logo 1.png"
+                    alt="Logo Tur Belém">
+                <div class="logo">Tur Belém</div>
+
+                <!-- Menu de navegação -->
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pontos_turisticos.html">Pontos
+                            Turísticos</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="praias.html">Praias</a></li>
+                    <li><a href="sobrenos.html">Sobre</a></li>
+                </ul>
+
+                <!-- Ícone de menu hamburguer para mobile -->
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </header>
+
+        <div id="loading"
+            style="display: block; font-weight: bold; text-align: center;">Carregando...</div>
+        <main>
+            <article class="texto_sobre">
+                <h1 id="nome"></h1>
+                <img id="imagem" alt="Imagem do Ponto Turístico" />
+                <p id="descricao"></p>
+
+                <section>
+                    <h2>História</h2>
+                    <p id="historia">História não disponível.</p>
+                </section>
+
+                <section>
+                    <h2>Curiosidades</h2>
+                    <div id="curiosidades"></div>
+                </section>
+
+                <section>
+                    <h2>Detalhes Adicionais</h2>
+                    <div id="detalhesAdicionais"></div>
+                </section>
+                <section><div id="map"
+                        style="width: 100%; height: 400px;"></div></section>
+            </article>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <!-- Links de navegação do rodapé -->
+                <div class="footer-nav">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pontos_turisticos.html">Pontos
+                                Turísticos</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="praias.html">Praias</a></li>
+                        <li><a href="sobrenos.html">Sobre</a></li>
+                    </ul>
+                </div>
+
+                <!-- Informações de contato -->
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p>Email: turbelem10@gmail.com</p>
+                    <p>Telefone: (91) 4002-8922</p>
+                    <p>Endereço: Avenida Gov. José Malcher, 1527 - Nazaré - Belém, PA</p>
+                </div>
+
+                <!-- Redes sociais -->
+                <div class="footer-social">
+                    <h3>Siga-nos</h3>
+                <a href="https://www.facebook.com/profile.php?id=61570008834864&mibextid=ZbWKwL"><img src="tur imagens/facebook icon.png"
+                        alt="Facebook"></a>
+                <a href="https://www.instagram.com/tur_belemweb?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="tur imagens/insta.png"
+                        alt="Instagram"></a>
+                <a href="https://x.com/TurBelem_?t=ne6fS6BIL2rIgweU--7zpA&s=09"><img src="tur imagens/twitter icon.png"
+                        alt="Twitter"></a>
+                </div>
+            </div>
+
+            <!-- Direitos autorais -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tur Belém. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+        <link rel="stylesheet"
+            href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+        <script src="script/main.js"></script>
+        <script src="script/script.js"></script>
+
+    </body>
+</html>

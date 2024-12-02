@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>Tur Belém - Galeria</title>
+        <link href="css/style_galeria.css" rel="stylesheet" />
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <!-- Logo -->
+                <img class="logo-img" src="tur imagens/logo 1.png" alt>
+                <div class="logo">Tur Belém</div>
+
+                <!-- Menu de navegação -->
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pontos_turisticos.html">Pontos
+                            Turísticos</a></li>
+                    <li class="active"><a href="galeria.html">Galeria</a></li>
+                    <li><a href="praias.html">Praias</a></li>
+                    <li><a href="sobrenos.html">Sobre</a></li>
+                </ul>
+
+                <!-- Ícone de menu hamburguer para mobile -->
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </header>
+
+        <section class="gallery-section">
+            <h2>Galeria</h2>
+            <div class="gallery-container" id="gallery-container"></div>
+        </section>
+
+        <!-- Modal para exibir a imagem ampliada -->
+        <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modal-img">
+            <div id="caption"></div>
+            <div id="caption2"></div>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <!-- Links de navegação do rodapé -->
+                <div class="footer-nav">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pontos_turisticos.html">Pontos
+                                Turísticos</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="praias.html">Praias</a></li>
+                        <li><a href="sobrenos.html">Sobre</a></li>
+                    </ul>
+                </div>
+
+                <!-- Informações de contato -->
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p>Email: turbelem10@gmail.com</p>
+                    <p>Telefone: (91) 4002-8922</p>
+                    <p>Endereço: Avenida Gov. José Malcher, 1527 - Nazaré -
+                        Belém, PA</p>
+                </div>
+
+                <!-- Redes sociais -->
+                <div class="footer-social">
+                    <h3>Siga-nos</h3>
+                    <a href="https://www.facebook.com/profile.php?id=61570008834864&mibextid=ZbWKwL"><img src="tur imagens/facebook icon.png"
+                            alt="Facebook"></a>
+                    <a href="https://www.instagram.com/tur_belemweb?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="tur imagens/insta.png"
+                            alt="Instagram"></a>
+                    <a href="https://x.com/TurBelem_?t=ne6fS6BIL2rIgweU--7zpA&s=09"><img src="tur imagens/twitter icon.png"
+                            alt="Twitter"></a>
+                </div>
+            </div>
+
+            <!-- Direitos autorais -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tur Belém. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+
+        <script src="script/script.js"></script>
+        <script src="script/galeria.js"></script>
+    </body>
+</html>
